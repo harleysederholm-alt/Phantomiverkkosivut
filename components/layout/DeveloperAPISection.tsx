@@ -12,13 +12,13 @@ export default function DeveloperAPISection() {
         switch (status.toUpperCase()) {
             case 'STABLE':
             case 'VAKAA':
-                return 'text-green-400 bg-green-500/20 border-green-500/50';
+                return 'text-emerald-400 bg-emerald-500/15 border-emerald-500/40';
             case 'BETA':
-                return 'text-amber-400 bg-amber-500/20 border-amber-500/50';
+                return 'text-amber-500 bg-amber-500/15 border-amber-500/40';
             case 'ALPHA':
-                return 'text-red-400 bg-red-500/20 border-red-500/50';
+                return 'text-red-400 bg-red-500/15 border-red-500/40';
             default:
-                return 'text-green-400 bg-green-500/20 border-green-500/50';
+                return 'text-emerald-400 bg-emerald-500/15 border-emerald-500/40';
         }
     };
 
@@ -32,10 +32,10 @@ export default function DeveloperAPISection() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-mono font-bold text-green-500 text-shadow-glow mb-4">
+                    <h2 className="text-3xl md:text-5xl font-mono font-bold text-emerald-400 text-shadow-glow mb-4">
                         &gt; {t.title}
                     </h2>
-                    <p className="text-green-500/70 font-mono text-lg">
+                    <p className="text-emerald-500/80 font-mono text-lg">
                         {t.subtitle}
                     </p>
                 </motion.div>
@@ -53,13 +53,13 @@ export default function DeveloperAPISection() {
                             key={sdk.language}
                             className="terminal-window p-4 text-center hover:border-green-400 transition-colors cursor-pointer"
                         >
-                            <div className="text-green-400 font-mono font-bold text-sm mb-2">
+                            <div className="text-emerald-400 font-mono font-bold text-sm mb-2">
                                 {sdk.language}
                             </div>
                             <div className={`inline-block px-2 py-1 text-xs font-mono border ${getStatusColor(sdk.status)}`}>
                                 {sdk.status}
                             </div>
-                            <div className="text-green-500/50 font-mono text-xs mt-2">
+                            <div className="text-emerald-500/60 font-mono text-xs mt-2">
                                 v{sdk.version}
                             </div>
                         </div>
@@ -77,15 +77,15 @@ export default function DeveloperAPISection() {
                     {t.examples.map((example) => (
                         <div key={example.title} className="terminal-window p-6">
                             <div className="flex items-center justify-between mb-4">
-                                <h3 className="text-green-400 font-mono font-bold">
+                                <h3 className="text-emerald-400 font-mono font-bold">
                                     {example.title}
                                 </h3>
-                                <span className="text-cyan-400 font-mono text-xs uppercase">
+                                <span className="text-teal-400 font-mono text-xs uppercase">
                                     {example.language}
                                 </span>
                             </div>
-                            <pre className="bg-black/50 p-4 overflow-x-auto border border-green-500/20">
-                                <code className="text-green-500/80 font-mono text-sm whitespace-pre">
+                            <pre className="bg-black/60 p-4 overflow-x-auto border border-emerald-500/20">
+                                <code className="text-emerald-500/85 font-mono text-sm whitespace-pre">
                                     {example.code}
                                 </code>
                             </pre>
@@ -101,7 +101,7 @@ export default function DeveloperAPISection() {
                     transition={{ delay: 0.4 }}
                     className="text-center"
                 >
-                    <div className="inline-block bg-green-500/10 border border-green-500/30 px-6 py-3 font-mono text-green-400 text-sm">
+                    <div className="inline-block bg-emerald-500/10 border border-emerald-500/25 px-6 py-3 font-mono text-emerald-400 text-sm">
                         ⚡ {t.rateLimit}
                     </div>
                 </motion.div>

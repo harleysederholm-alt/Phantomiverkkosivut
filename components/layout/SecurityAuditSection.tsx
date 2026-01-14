@@ -7,15 +7,17 @@ export default function SecurityAuditSection() {
 
     return (
         <section className="min-h-screen w-full relative z-10 flex flex-col items-center justify-center py-24">
-            <div className="container mx-auto px-4 max-w-5xl">
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60 z-0" />
+            <div className="container mx-auto px-4 max-w-5xl relative z-10">
                 <motion.h2
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    className="text-4xl md:text-6xl font-black text-center mb-4 text-green-500 font-display tracking-tighter uppercase text-shadow-glow"
+                    className="text-4xl md:text-6xl font-black text-center mb-4 text-emerald-400 font-display tracking-tighter uppercase text-shadow-glow"
                 >
-                    {">"} {t.securityAudit.title}
+                    {">"}  {t.securityAudit.title}
                 </motion.h2>
-                <p className="text-center text-green-500/60 font-mono mb-16">{t.securityAudit.subtitle}</p>
+                <p className="text-center text-emerald-500/70 font-mono mb-16">{t.securityAudit.subtitle}</p>
 
                 {/* Audit Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
@@ -31,11 +33,11 @@ export default function SecurityAuditSection() {
                                 <h3 className="text-lg font-bold text-white font-mono">{audit.firm}</h3>
                                 <span className="text-amber-500 text-xs font-mono">{audit.date}</span>
                             </div>
-                            <p className="text-green-500/60 text-xs font-mono mb-2">{audit.scope}</p>
-                            <p className="text-green-400 text-sm font-mono font-bold mb-4 border-l-2 border-green-500 pl-3">
+                            <p className="text-emerald-500/70 text-xs font-mono mb-2">{audit.scope}</p>
+                            <p className="text-emerald-400 text-sm font-mono font-bold mb-4 border-l-2 border-emerald-500 pl-3">
                                 {audit.finding}
                             </p>
-                            <blockquote className="text-green-500/80 text-sm font-mono italic flex-grow">
+                            <blockquote className="text-emerald-500/85 text-sm font-mono italic flex-grow">
                                 &ldquo;{audit.quote}&rdquo;
                             </blockquote>
                         </motion.div>
@@ -51,7 +53,7 @@ export default function SecurityAuditSection() {
                     <h3 className="text-2xl font-bold text-amber-500 font-display mb-4 text-center">
                         {">"} {t.securityAudit.bugBounty.title}
                     </h3>
-                    <p className="text-center text-green-500/70 font-mono mb-8">
+                    <p className="text-center text-emerald-500/80 font-mono mb-8">
                         {t.securityAudit.bugBounty.description}
                     </p>
 
@@ -59,11 +61,11 @@ export default function SecurityAuditSection() {
                         {t.securityAudit.bugBounty.tiers.map((tier, idx) => (
                             <div
                                 key={idx}
-                                className="text-center p-4 border border-green-500/20 bg-green-500/5"
+                                className="text-center p-4 border border-emerald-500/20 bg-emerald-500/5"
                             >
                                 <p className={`text-sm font-mono font-bold mb-2 ${idx === 0 ? 'text-red-500' :
-                                        idx === 1 ? 'text-orange-500' :
-                                            idx === 2 ? 'text-amber-500' : 'text-green-500'
+                                    idx === 1 ? 'text-orange-500' :
+                                        idx === 2 ? 'text-amber-500' : 'text-emerald-500'
                                     }`}>
                                     {tier.severity}
                                 </p>
@@ -72,7 +74,7 @@ export default function SecurityAuditSection() {
                         ))}
                     </div>
 
-                    <p className="text-center text-green-400 font-mono font-bold text-lg">
+                    <p className="text-center text-emerald-400 font-mono font-bold text-lg">
                         {t.securityAudit.bugBounty.totalPaid}
                     </p>
                 </motion.div>

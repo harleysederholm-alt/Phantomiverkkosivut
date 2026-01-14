@@ -1,5 +1,6 @@
 import HeroSection from "@/components/layout/HeroSection";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
+import JourneyController from "@/components/ui/JourneyController";
 import SceneLoader from "@/components/3d/SceneLoader";
 
 import FeaturesSection from "@/components/layout/FeaturesSection";
@@ -34,38 +35,42 @@ export default function Home() {
         <SceneLoader />
       </div>
 
+      {/* Global Dark Overlay for Text Readability */}
+      <div className="fixed inset-0 z-[1] pointer-events-none bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
+
       {/* Content Layer - Scrollable */}
-      <main className="relative z-10 w-full flex flex-col">
-        <LanguageSwitcher />
-        <HeroSection />
-        <FeaturesSection />
-        <TechSpecsSection />
-        <ComparisonSection />
-        <UseCasesSection />
-        <SecurityAuditSection />
-        <ThreatModelSection />
-        <NetworkStatsSection />
+      <JourneyController>
+        <main className="relative z-10 w-full flex flex-col">
+          <LanguageSwitcher />
+          <HeroSection />
+          <FeaturesSection />
+          <TechSpecsSection />
+          <ComparisonSection />
+          <UseCasesSection />
+          <SecurityAuditSection />
+          <ThreatModelSection />
+          <NetworkStatsSection />
 
-        {/* New Premium Sections */}
-        <OpenSourceSection />
-        <ProtocolSpecSection />
-        <NodeGuideSection />
-        <DeveloperAPISection />
-        <HallOfFameSection />
-        <GlobalReachSection />
-        <UserTestimonialsSection />
+          {/* New Premium Sections */}
+          <OpenSourceSection />
+          <ProtocolSpecSection />
+          <NodeGuideSection />
+          <DeveloperAPISection />
+          <HallOfFameSection />
+          <GlobalReachSection />
+          <UserTestimonialsSection />
 
-        <RoadmapSection />
-        <FAQSection />
-        <PressQuotesSection />
-        <MissionSection />
-        <DeploymentSection />
-        <ChangelogSection />
+          <RoadmapSection />
+          <FAQSection />
+          <PressQuotesSection />
+          <MissionSection />
+          <DeploymentSection />
+          <ChangelogSection />
 
-        {/* Footer */}
-        <FooterSection />
-      </main>
+          {/* Footer */}
+          <FooterSection />
+        </main>
+      </JourneyController>
     </div>
   );
 }
-

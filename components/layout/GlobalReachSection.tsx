@@ -18,10 +18,10 @@ export default function GlobalReachSection() {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-mono font-bold text-green-500 text-shadow-glow mb-4">
+                    <h2 className="text-3xl md:text-5xl font-mono font-bold text-emerald-400 text-shadow-glow mb-4">
                         &gt; {t.title}
                     </h2>
-                    <p className="text-green-500/70 font-mono text-lg">
+                    <p className="text-emerald-500/80 font-mono text-lg">
                         {t.subtitle}
                     </p>
                 </motion.div>
@@ -35,28 +35,28 @@ export default function GlobalReachSection() {
                     className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16"
                 >
                     <div className="terminal-window p-6 text-center">
-                        <div className="text-4xl font-mono font-bold text-green-400 mb-2">
+                        <div className="text-4xl font-mono font-bold text-emerald-400 mb-2">
                             {t.stats.countries}
                         </div>
-                        <div className="text-green-500/60 font-mono text-sm">COUNTRIES</div>
+                        <div className="text-emerald-500/70 font-mono text-sm">COUNTRIES</div>
                     </div>
                     <div className="terminal-window p-6 text-center">
-                        <div className="text-4xl font-mono font-bold text-green-400 mb-2">
+                        <div className="text-4xl font-mono font-bold text-emerald-400 mb-2">
                             {t.stats.continents}
                         </div>
-                        <div className="text-green-500/60 font-mono text-sm">CONTINENTS</div>
+                        <div className="text-emerald-500/70 font-mono text-sm">CONTINENTS</div>
                     </div>
                     <div className="terminal-window p-6 text-center">
-                        <div className="text-4xl font-mono font-bold text-amber-400 mb-2">
+                        <div className="text-4xl font-mono font-bold text-amber-500 mb-2">
                             {t.stats.activeUsers}
                         </div>
-                        <div className="text-green-500/60 font-mono text-sm">ACTIVE USERS</div>
+                        <div className="text-emerald-500/70 font-mono text-sm">ACTIVE USERS</div>
                     </div>
                     <div className="terminal-window p-6 text-center">
-                        <div className="text-4xl font-mono font-bold text-cyan-400 mb-2">
+                        <div className="text-4xl font-mono font-bold text-teal-400 mb-2">
                             {t.stats.dailyMessages}
                         </div>
-                        <div className="text-green-500/60 font-mono text-sm">DAILY MESSAGES</div>
+                        <div className="text-emerald-500/70 font-mono text-sm">DAILY MESSAGES</div>
                     </div>
                 </motion.div>
 
@@ -78,32 +78,32 @@ export default function GlobalReachSection() {
                             className="terminal-window p-6 hover:border-green-400 transition-colors"
                         >
                             <div className="flex items-center justify-between mb-4">
-                                <h3 className="text-lg font-mono font-bold text-green-400">
+                                <h3 className="text-lg font-mono font-bold text-emerald-400">
                                     {region.name}
                                 </h3>
-                                <span className="text-green-500 font-mono text-sm bg-green-500/20 px-2 py-1">
+                                <span className="text-emerald-500 font-mono text-sm bg-emerald-500/15 px-2 py-1">
                                     {region.growth}
                                 </span>
                             </div>
                             <div className="grid grid-cols-2 gap-4 mb-4">
                                 <div>
-                                    <div className="text-2xl font-mono font-bold text-amber-400">
+                                    <div className="text-2xl font-mono font-bold text-amber-500">
                                         {region.nodes.toLocaleString()}
                                     </div>
-                                    <div className="text-green-500/50 font-mono text-xs">NODES</div>
+                                    <div className="text-emerald-500/60 font-mono text-xs">NODES</div>
                                 </div>
                                 <div>
-                                    <div className="text-2xl font-mono font-bold text-cyan-400">
+                                    <div className="text-2xl font-mono font-bold text-teal-400">
                                         {region.users}
                                     </div>
-                                    <div className="text-green-500/50 font-mono text-xs">USERS</div>
+                                    <div className="text-emerald-500/60 font-mono text-xs">USERS</div>
                                 </div>
                             </div>
                             <div className="flex flex-wrap gap-2">
                                 {region.topCountries.map((country) => (
                                     <span
                                         key={country}
-                                        className="text-xs font-mono text-green-500/60 bg-black/50 px-2 py-1 border border-green-500/20"
+                                        className="text-xs font-mono text-emerald-500/70 bg-black/60 px-2 py-1 border border-emerald-500/25"
                                     >
                                         {country}
                                     </span>
@@ -127,7 +127,7 @@ export default function GlobalReachSection() {
                             <h3 className="text-lg font-mono font-bold text-red-400 mb-2">
                                 {t.bannedRegions.title}
                             </h3>
-                            <p className="text-green-500/70 font-mono text-sm mb-4">
+                            <p className="text-emerald-500/80 font-mono text-sm mb-4">
                                 {t.bannedRegions.description}
                             </p>
                             <div className="flex flex-wrap gap-2">

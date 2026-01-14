@@ -7,7 +7,9 @@ export default function UseCasesSection() {
 
     return (
         <section className="min-h-screen w-full relative z-10 flex flex-col items-center justify-center py-24">
-            <div className="container mx-auto px-4 max-w-5xl">
+            {/* Dark overlay for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/60 z-0" />
+            <div className="container mx-auto px-4 max-w-5xl relative z-10">
                 <motion.h2
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
