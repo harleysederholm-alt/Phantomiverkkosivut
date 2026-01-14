@@ -1,112 +1,168 @@
 # 🔮 PHANTOMI
 
-> **Zero-Trace Encrypted Messaging Protocol**
+> **Jäljettömän Salatun Viestinnän Protokolla**
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.1.3-black?logo=nextdotjs)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-61DAFB?logo=react)](https://react.dev/)
 [![Three.js](https://img.shields.io/badge/Three.js-3D-black?logo=threedotjs)](https://threejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/Lisenssi-MIT-green.svg)](LICENSE)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/STATUS-ACTIVE-00FF41?style=for-the-badge" alt="status"/>
-  <img src="https://img.shields.io/badge/ENCRYPTION-POST--QUANTUM-00FFFF?style=for-the-badge" alt="encryption"/>
+  <img src="https://img.shields.io/badge/TILA-AKTIIVINEN-00FF41?style=for-the-badge" alt="tila"/>
+  <img src="https://img.shields.io/badge/SALAUS-POST--QUANTUM-00FFFF?style=for-the-badge" alt="salaus"/>
 </p>
 
 ---
 
-## 📡 What is Phantomi?
+## 📡 Mikä on Phantomi?
 
-Phantomi is an **ultra-secure, decentralized messaging protocol** designed for zero-trace communications. Built with military-grade encryption (ECDH P-521 + CRYSTALS-Kyber-1024), Phantomi ensures that your messages leave no forensic footprint.
+Phantomi on **ultra-turvallinen, hajautettu viestiprotokolla**, joka on suunniteltu jäljettömään viestintään. Sotilastason salauksella (ECDH P-521 + CRYSTALS-Kyber-1024) Phantomi varmistaa, ettei viesteistäsi jää minkäänlaista forensista jälkeä.
 
-### 🔐 Key Features
+### 🔐 Pääominaisuudet
 
-| Feature | Description |
-|---------|-------------|
-| **Post-Quantum Encryption** | CRYSTALS-Kyber-1024 hybrid key exchange |
-| **Zero Trace Architecture** | RAM-only storage, no disk writes |
-| **Perfect Forward Secrecy** | Enabled by default on all messages |
-| **Decentralized Mesh Network** | No central servers to compromise |
-| **0-Second Message Retention** | Messages exist only in RAM |
-
----
-
-## 🎨 Website Design
-
-This repository contains the **official Phantomi marketing website** – a cinematic 3D experience showcasing the protocol's capabilities.
-
-### Tech Stack
-
-- **Framework:** Next.js 15 + React 19
-- **3D Graphics:** Three.js + React Three Fiber + Drei
-- **Post-Processing:** @react-three/postprocessing
-- **Animations:** GSAP + Framer Motion
-- **Styling:** Tailwind CSS 4
-- **Language:** TypeScript
-
-### Design Philosophy: "Terminal Brutalism"
-
-The website embodies a **Cinematic Hacker** aesthetic:
-
-- 🖥️ **Terminal Brutalist UI** – Monospaced fonts, glass panels, scanlines
-- 💚 **Toxic Green Palette** – `#00FF41` on deep void black
-- 🌀 **Diamond-Tier 3D** – Six immersive scenes with scroll-driven camera
-- ⚡ **Post-Processing** – Bloom, chromatic aberration, film grain, vignette
+| Ominaisuus | Kuvaus |
+|------------|--------|
+| **Post-Quantum Salaus** | CRYSTALS-Kyber-1024 hybridi-avaimenvaihto |
+| **Zero Trace -arkkitehtuuri** | Vain RAM-tallennusta, ei levykirjoituksia |
+| **Perfect Forward Secrecy** | Oletuksena päällä kaikissa viesteissä |
+| **Hajautettu Mesh-verkko** | Ei keskuspalvelimia murrettavaksi |
+| **0 sekunnin viestisäilytys** | Viestit ovat olemassa vain RAM-muistissa |
 
 ---
 
-## 🌌 3D Experience Architecture
+## 🎨 Tietoa projektista
 
-The website features **6 cinematic 3D scenes** that the user travels through while scrolling:
+Tämä repositorio sisältää **Phantomin virallisen markkinointisivuston** – elokuvamaisen 3D-kokemuksen, joka esittelee protokollan kyvykkyyksiä interaktiivisella tavalla.
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  SCENE 1: THE AWAKENING                                         │
-│  └── QuantumMonolith + DataRings (Hero Section)                 │
-├─────────────────────────────────────────────────────────────────┤
-│  SCENE 2: THE BREACH                                            │
-│  └── HyperTunnel + HexGrid + DataPackets (Features)             │
-├─────────────────────────────────────────────────────────────────┤
-│  SCENE 3: THE NETWORK                                           │
-│  └── StarField + NeuralNetwork (Technology + Security)          │
-├─────────────────────────────────────────────────────────────────┤
-│  SCENE 4: THE CORE                                              │
-│  └── ParticleLogo (Node Guide + Developer API)                  │
-├─────────────────────────────────────────────────────────────────┤
-│  SCENE 5: THE VOID                                              │
-│  └── CyberGlobe (Global Reach + Testimonials)                   │
-├─────────────────────────────────────────────────────────────────┤
-│  SCENE 6: THE ASCENSION                                         │
-│  └── AscensionPortal (Roadmap + Footer)                         │
-└─────────────────────────────────────────────────────────────────┘
-```
+### Teknologiapino
+
+| Teknologia | Käyttötarkoitus |
+|------------|-----------------|
+| **Next.js 15 + React 19** | Sovelluskehys ja UI-komponentit |
+| **Three.js + React Three Fiber** | 3D-grafiikka ja animaatiot |
+| **Drei + Postprocessing** | 3D-apukirjastot ja jälkikäsittelyefektit |
+| **Framer Motion** | Sivusto-animaatiot ja siirtymät |
+| **Tailwind CSS 4** | Responsiivinen tyylitys |
+| **TypeScript** | Tyypitetty JavaScript |
+
+### Suunnittelufilosofia: "Terminal Brutalism"
+
+Sivusto edustaa **elokuvallista hakkeri-estetiikkaa**:
+
+- 🖥️ **Terminal Brutalist UI** – Monospace-fontit, lasipaneelit, skannauslinjat
+- 💚 **Myrkynvihreä väripaletti** – `#00FF41` syvänmustan päällä
+- 🌀 **Elokuvallinen 3D** – Upottavat kohtaukset scroll-ohjauksella
+- ⚡ **Jälkikäsittely** – Bloom, kromaattinen aberraatio, filmijyvä, vinjetti
 
 ---
 
-## 🚀 Getting Started
+## ✅ Mitä on tehty
 
-### Prerequisites
+### 3D-kokemus
+- [x] **SceneContainer** – Three.js-kanvaskontti jälkikäsittelyefekteillä (Bloom, ChromaticAberration, Noise, Vignette)
+- [x] **CameraRig** – Scroll-pohjainen kamerakuljetus läpi 3D-maailman
+- [x] **StarField** – Tähtikentät partikkelijärjestelmällä (6000 tähteä)
+- [x] **NeuralNetwork** – Verkkovisualisointi pisteiden ja viivojen välillä
+- [x] **HexGrid** – Heksagonaalinen ruudukko taustalle
+- [x] **DataRings** – Pyörivät datarenkaat keskelle
+- [x] **QuantumMonolith** – Kvanttimonoliitti-animaatio
+- [x] **HyperTunnel** – Hypertunnelin läpikulkuefekti
+- [x] **DataPackets** – Liikkuvat datapaketit verkossa
+- [x] **ParticleLogo** – Partikkelilogo-visualisointi
+- [x] **CyberGlobe** – Globaali visualisointi
+
+### Sivusto-osiot
+- [x] **HeroSection** – Etusivu Phantomi-logolla ja aloitusteksteillä
+- [x] **FeaturesSection** – Ominaisuuskortit (4 pääominaisuutta)
+- [x] **TechSection** – Teknologiakohtainen esittely
+- [x] **SecurityPrinciplesSection** – Turvallisuusperiaatteet
+- [x] **NetworkStatsSection** – Verkkotilastojen reaaliaikaiset laskurit
+- [x] **ComparisonSection** – Vertailutaulukko (Phantomi vs kilpailijat)
+- [x] **UseCasesSection** – Käyttötapaukset eri ryhmille
+- [x] **ThreatModelSection** – Uhkamallit ja suojaukset
+- [x] **NodeGuideSection** – Ohjeet oman noodin perustamiseen
+- [x] **DeveloperAPISection** – Kehittäjä-API dokumentaatio
+- [x] **UserTestimonialsSection** – Käyttäjätestimoniaalit
+- [x] **RoadmapSection** – Tuotekehityksen aikajana
+- [x] **FooterSection** – Sivuston footer
+
+### UI-komponentit
+- [x] **JourneyController** – 6 minuutin automaattinen esitysmoodi play/pause-ohjauksella
+- [x] **LanguageSwitcher** – Kielenvaihtaja (FI/EN)
+- [x] **FeatureCard** – Ominaisuuskorttikomponentti
+- [x] **ComplianceBanner** – Vaatimustenmukaisuusbanneri
+- [x] **Navbar** – Navigointipalkki
+
+### Muut
+- [x] **Kaksikielisyys** – Täysi FI/EN-tuki kaikissa osioissa
+- [x] **Responsiivisuus** – Toimii mobiili- ja työpöytänäytöillä
+- [x] **Journey Mode** – Automaattinen 6 minuutin esitysscrollaus tasaisella nopeudella
+
+---
+
+## 🚧 Mitä on vielä tekemässä
+
+### 3D-kehitys
+- [ ] **AscensionPortal** – Loppuporttaali-animaatio
+- [ ] **CyberGlobe** – Interaktiivinen globaali verkko
+- [ ] **ParticleLogo** – Phantomi-logon partikkeliversio
+
+### Ominaisuudet
+- [ ] **White Paper -sivu** – Tekninen dokumentaatio erillisellä sivulla
+- [ ] **Lataussivu** – Sovelluksen latauslinkki ja asennusohjeet
+- [ ] **Blogi** – Uutisia ja päivityksiä projektista
+- [ ] **Kontaktilomake** – Yhteydenottolomake
+
+### Optimointi
+- [ ] **Suorituskykyoptimointi** – Lazy loading, code splitting
+- [ ] **SEO-parannukset** – Meta-tagit, Open Graph -kuvat
+- [ ] **Accessibility** – WCAG-yhteensopivuus
+- [ ] **Mobiiliparannukset** – Kosketusoptimoidut 3D-interaktiot
+
+### Julkaisu
+- [ ] **Tuotantobuild** – Optimoitu production-versio
+- [ ] **Domain-konfigurointi** – phantomi.io verkkotunnus
+- [ ] **CDN-jako** – Sisällönjakeluverkon käyttöönotto
+- [ ] **Analytics** – Käyttäjäanalyysin toteutus
+
+---
+
+## 🚀 Käynnistys
+
+### Vaatimukset
 
 - Node.js 18+ 
-- npm or yarn
+- npm tai yarn
 
-### Installation
+### Asennus
 
 ```bash
-# Clone the repository
+# Kloonaa repositorio
 git clone https://github.com/harleysederholm-alt/Phantomiverkkosivut.git
 cd Phantomiverkkosivut
 
-# Install dependencies
+# Asenna riippuvuudet
 npm install
 
-# Start development server
+# Käynnistä kehityspalvelin
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Avaa [http://localhost:3000](http://localhost:3000) selaimessasi.
 
-### Build for Production
+### Journey Mode -käyttö
+
+Sivustolla on automaattinen esitysmoodi:
+
+| Komento | Toiminto |
+|---------|----------|
+| **Play-nappi** (vasen yläkulma) | Aloita 6 minuutin matka |
+| **Välilyönti** | Aloita matka / Tauko / Jatka |
+| **Escape** | Lopeta ja palaa alkuun |
+| **Scroll** | Lopeta automaattinen scrollaus |
+
+### Tuotantobuild
 
 ```bash
 npm run build
@@ -115,125 +171,91 @@ npm run start
 
 ---
 
-## 📁 Project Structure
+## 📁 Projektien rakenne
 
 ```
 Phantomiverkkosivut/
 ├── app/
-│   ├── globals.css          # Global styles + scrollbar
-│   ├── layout.tsx           # Root layout with fonts
-│   └── page.tsx             # Main page with all sections
+│   ├── globals.css          # Globaalit tyylit + scrollbar
+│   ├── layout.tsx           # Juurilayout fontteilla
+│   └── page.tsx             # Pääsivu kaikilla osioilla
 ├── components/
-│   ├── 3d/                  # Three.js 3D components
+│   ├── 3d/                  # Three.js 3D-komponentit
 │   │   ├── SceneContainer.tsx
 │   │   ├── CameraRig.tsx
-│   │   ├── QuantumMonolith.tsx
-│   │   ├── DataRings.tsx
-│   │   ├── HyperTunnel.tsx
-│   │   ├── HexGrid.tsx
-│   │   ├── DataPackets.tsx
 │   │   ├── StarField.tsx
 │   │   ├── NeuralNetwork.tsx
-│   │   ├── ParticleLogo.tsx
-│   │   ├── CyberGlobe.tsx
-│   │   └── AscensionPortal.tsx
-│   ├── layout/              # Page sections
+│   │   ├── HexGrid.tsx
+│   │   ├── DataRings.tsx
+│   │   └── ...
+│   ├── layout/              # Sivusto-osiot
 │   │   ├── HeroSection.tsx
 │   │   ├── FeaturesSection.tsx
-│   │   ├── TechSection.tsx
+│   │   ├── ComparisonSection.tsx
 │   │   └── ...
-│   └── ui/                  # Reusable UI components
+│   └── ui/                  # Uudelleenkäytettävät UI-komponentit
+│       ├── JourneyController.tsx
 │       ├── LanguageSwitcher.tsx
-│       ├── FeatureCard.tsx
-│       └── ComplianceBanner.tsx
+│       └── FeatureCard.tsx
 ├── hooks/
 │   └── useLanguage.tsx      # i18n context & hook
 ├── lib/
-│   └── translations.ts      # EN/FI translations
-└── public/                  # Static assets
+│   └── translations.ts      # EN/FI-käännökset
+└── public/                  # Staattiset tiedostot
 ```
 
 ---
 
-## 🌐 Internationalization
+## 🌐 Kaksikielisyys
 
-Full bilingual support for English and Finnish:
+Täysi tuki englannille ja suomelle:
 
 ```tsx
-// Toggle between languages in UI
-<LanguageSwitcher />  // EN | FI buttons
+// Kielenvaihtaja käyttöliittymässä
+<LanguageSwitcher />  // EN | FI -napit
 
-// Use translations in components
+// Käännösten käyttö komponenteissa
 const { t, language } = useLanguage();
-<h1>{t('hero.headline')}</h1>
+<h1>{t.hero.headline}</h1>
 ```
 
 ---
 
-## 🔧 Configuration
+## 📊 Phantomi-protokollan tekniset tiedot
 
-### Tailwind CSS 4
-
-Custom color tokens in `tailwind.config.ts`:
-
-```ts
-colors: {
-  'deep-void': '#000500',
-  'toxic-green': '#00FF41',
-  'cyber-cyan': '#00FFFF',
-}
-```
-
-### Post-Processing Effects
-
-Configured in `SceneContainer.tsx`:
-
-```tsx
-<EffectComposer>
-  <Bloom intensity={2} luminanceThreshold={0.05} />
-  <ChromaticAberration offset={[0.003, 0.003]} />
-  <Noise opacity={0.12} />
-  <Vignette darkness={1.3} />
-</EffectComposer>
-```
-
----
-
-## 📊 Technical Specifications
-
-| Protocol | Implementation |
-|----------|----------------|
-| Key Exchange | ECDH P-521 (secp521r1) |
-| Hash Algorithm | SHA-3 (Keccak-256) |
+| Protokolla | Toteutus |
+|------------|----------|
+| Avaimenvaihto | ECDH P-521 (secp521r1) |
+| Tiivistealgoritmi | SHA-3 (Keccak-256) |
 | Post-Quantum KEM | CRYSTALS-Kyber-1024 |
-| Message Encryption | AES-256-GCM |
-| Digital Signatures | EdDSA (Ed25519) |
-| Message Retention | 0 seconds (RAM-only) |
-| Network Topology | Decentralized Mesh |
+| Viestien salaus | AES-256-GCM |
+| Digitaaliset allekirjoitukset | EdDSA (Ed25519) |
+| Viestien säilytys | 0 sekuntia (vain RAM) |
+| Verkkotopologia | Hajautettu Mesh |
 
 ---
 
-## 🤝 Contributing
+## 🤝 Osallistuminen
 
-Contributions are welcome! Please read our contributing guidelines before submitting PRs.
+Tervetuloa mukaan kehitykseen!
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit changes (`git commit -m 'Add amazing feature'`)
-4. Push to branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+1. Forkkaa repositorio
+2. Luo oma feature-haara (`git checkout -b feature/loistava-ominaisuus`)
+3. Tee muutokset ja committaa (`git commit -m 'Lisää loistava ominaisuus'`)
+4. Pushaa haaraan (`git push origin feature/loistava-ominaisuus`)
+5. Avaa Pull Request
 
 ---
 
-## 📞 Contact
+## 📄 Lisenssi
 
-- **Website:** [phantomi.io](https://phantomi.io)
+Tämä projekti on lisensoitu MIT-lisenssillä - katso [LICENSE](LICENSE) tiedosto lisätiedoista.
+
+---
+
+## 📞 Yhteystiedot
+
+- **Verkkosivusto:** [phantomi.io](https://phantomi.io)
 - **GitHub:** [@harleysederholm-alt](https://github.com/harleysederholm-alt)
 
 ---
